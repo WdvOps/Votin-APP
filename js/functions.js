@@ -42,7 +42,7 @@ const addVote = (index, candidate, votesE1) => {
 // If candidate won, set winner variable to true
 
 const isWinner= (candidate, votes) => {
-    if (votes === 270) {
+    if (votes === 1000) {
         winner = true;
 
         setWinnerLoser(candidate);
