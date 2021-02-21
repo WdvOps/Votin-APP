@@ -1,0 +1,85 @@
+/* These styles will be aplied on devices that have a widith of at last 768px */
+
+@media screen and (min-width: 768px) {
+    
+    .logo {
+        justify-content: flex-start;
+    }
+    .cards {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100%;
+        padding: 0;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .card{
+        width: 30rem;
+    }
+
+    .card:first-of-type {
+        margin-bottom: 0;
+    }
+
+    .card-image {
+        width: 30rem;
+        height: 26rem;
+    }
+
+    .votes-number-Mharla,
+    .votes-number-Behance {
+        font-size: 3.5rem;
+    }
+
+    .votes-text {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .candidate-name {
+        font-size: 2rem;
+    }
+
+    .candidate-paty {
+        font-size: 1.1rem;
+    }
+
+    .card-btn {
+        font-size: 2rem;
+    }
+}
+
+/* these styles will be applied on devices that have a width of at last 1024 */
+
+@media screen and (min-width: 1024px) {
+    
+    .cards {
+        width: 70%;
+    }
+
+    .card:hover {
+        transform: translateY(-2rem);
+    }
+
+.card:hover .btn-Mharla,
+.card:hover .btn-Behance {
+    font-size: 2.5rem;
+    }
+
+    .btn-Mharla:hover {
+        background: var(--btn-red-hover);        
+    }
+    
+    .btn-Behance:hover {
+        background: var(--btn-light-blue-hover);        
+    }
+}
+
+/* These styles will be aplied on devices that have a width of at last 1400px*/
+
+@media screen and (min-width:1400px) {
+     .cards {
+         width: 60%;
+     }
+}
