@@ -11,7 +11,7 @@ cards.innerHTML = getCards();
 
 // Get a reference to the cards buttons 
 
-const cardButtons = document.querySelector('.card-btn');
+const cardButtons = document.querySelectorAll('.card-btn');
 
 //  Get a reference to the Mharla votes span
 
@@ -26,11 +26,11 @@ const BehanceVotesE1 = document.querySelector('.votes-number-Behance');
 cardButtons.forEach(cardButton => {
     cardButton.addEventListener('click', (e) => { 
         if (e.target.classList.contains('btn-Mharla')) {
-            addVote(0, 'Mharla, MharlaVotesE1')
+            addVote(0, 'Mharla', MharlaVotesE1)
         } else {
-            addVote(1, 'BehanceVotesE1')
+            addVote(1, 'Behance', BehanceVotesE1)
         }
     })
     
-});
+})
 
